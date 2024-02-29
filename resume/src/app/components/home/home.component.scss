@@ -1,0 +1,25 @@
+:host {
+    .blob {
+        height: 350px;
+        width: 350px;
+        border-radius: 58% 43% 33% 64% / 50% 38% 53% 50%;
+        background: #5C8374;
+    }
+
+    .text {
+        font-size: 3em;
+        line-height: 1;
+        @media screen and (min-width:768px) {
+            font-size: 5em;
+        }
+    }
+
+    .fix-pos {
+        right: -100px;
+        top: 100px;
+        @media screen and (min-width:768px) {
+            right: -255px;
+            top: 50px;
+        }
+    }
+}
