@@ -4,6 +4,7 @@
         width: 350px;
         border-radius: 58% 43% 33% 64% / 50% 38% 53% 50%;
         background: #5C8374;
+        overflow: hidden;
     }
 
     .text {
@@ -21,5 +22,10 @@
             right: -255px;
             top: 50px;
         }
+    }
+    .img-blob{
+        filter: grayscale(1);
+        width:350px;
+        opacity: 0.7;
     }
 }
