@@ -1,11 +1,14 @@
 :host {
     .img {
-        width: 768px;
+        @media screen and (max-width:768px) {
+            max-width: 360px;     
+        }
+        max-width: 768px;
         filter: saturate(0.3);
     }
 
     .text {
-        width: 1200px;
+        max-width: 1200px;
     }
 
     .btn-wrapper {
