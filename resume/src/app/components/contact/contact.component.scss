@@ -1,0 +1,29 @@
+:host {
+    input , textarea{
+        width:500px;
+        height:45px;
+        background: #efefef;
+        font-size: 24px;
+    }
+    textarea{
+        height:300px;
+    }
+    .btn {
+
+        text-decoration: none;
+        color: #fff;
+        text-align: center;
+        text-transform: uppercase;
+        position: relative;
+        height: 50px;
+        width: 120px;
+        background: #93B1A6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.2s all;
+        &:hover {
+            background: #183D3D;
+        }
+    }
+}

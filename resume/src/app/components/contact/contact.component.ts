@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import emailjs, { type EmailJSResponseStatus } from '@emailjs/browser';
 
 
@@ -10,6 +10,7 @@ import emailjs, { type EmailJSResponseStatus } from '@emailjs/browser';
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
+  message = signal("");
   public sendEmail(e: Event) {
     e.preventDefault();
 
@@ -19,10 +20,10 @@ export class ContactComponent {
       })
       .then(
         () => {
-          console.log('SUCCESS!');
+          this.message.set("success")
         },
         (error) => {
-          console.log('FAILED...', (error as EmailJSResponseStatus).text);
+          this.message.set(`error ${(error as EmailJSResponseStatus).text}`)
         },
       );
   }
