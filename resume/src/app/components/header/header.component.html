@@ -1,16 +1,20 @@
-<mat-toolbar>
-    <span>GABY BUCHNIK</span>
-    <span class="example-spacer"></span>
-    <div mat-icon-button aria-label="icon-button" routerLink="/home" [routerLinkActive]="'active'" class="mx-1 cursor-pointer">
-        Home
+<header>
+    <div class="d-flex align-items-center justify-content-between p-3 header-wrapper">
+        <h4>GABY BUCHNIK</h4>
+        <div class="btn-wrapper d-flex mb-3">
+            <div mat-icon-button aria-label="icon-button" routerLink="/home" [routerLinkActive]="'active'" class="mx-1 cursor-pointer">
+                Home
+            </div>
+            <div mat-icon-button aria-label="icon-button" routerLink="/about" [routerLinkActive]="'active'" class="mx-1 cursor-pointer">
+                About
+            </div>
+            <div mat-icon-button aria-label="icon-button" routerLink="/portfolio" [routerLinkActive]="'active'" class="mx-1 cursor-pointer">
+                Portfolio
+            </div>
+            <div mat-icon-button aria-label="icon-button" routerLink="./contact" [routerLinkActive]="'active'" class="mx-1 cursor-pointer">
+                Contact
+            </div>
+        </div>
     </div>
-    <div mat-icon-button aria-label="icon-button" routerLink="/about" [routerLinkActive]="'active'" class="mx-1 cursor-pointer">
-        About
-    </div>
-    <div mat-icon-button aria-label="icon-button" routerLink="/portfolio" [routerLinkActive]="'active'" class="mx-1 cursor-pointer">
-        Portfolio
-    </div>
-    <div mat-icon-button aria-label="icon-button" routerLink="./contact" [routerLinkActive]="'active'" class="mx-1 cursor-pointer">
-        Contact
-    </div>
-</mat-toolbar>
+</header>
+
