@@ -1,8 +1,39 @@
-:host{
-    .img{
-        width:1200px;
+:host {
+    .img {
+        width: 768px;
+        filter: saturate(0.3);
     }
-    .text{
-        width:1200px;
+
+    .text {
+        width: 1200px;
     }
+
+    .btn-wrapper {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin: 25px 0px;
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            text-align: center;
+            text-transform: uppercase;
+            &.btn1 {
+                position: relative;
+                height: 50px;
+                width: 120px;
+                background: #93B1A6;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: 0.2s all;
+    
+                &:hover {
+                    background: #183D3D;
+                }
+            }
+        }
+    }
+
 }
