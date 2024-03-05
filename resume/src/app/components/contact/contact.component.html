@@ -1,6 +1,6 @@
-<div class="container">
+<div class="container-fluid">
     <div class="row">
-        <div class="col-12">
+        <div class="col">
             <form class="contact-form d-flex flex-column gap-4 justify-content-center align-items-center" (submit)="sendEmail($event)">
                 <h1>Contact Me</h1>
                 <hr>
@@ -10,7 +10,7 @@
                 <input type="submit" value="Send" class="btn">
             </form>
             @if(message()){
-                <div class="d-flex justify-content-center align-items-center my-3">
+                <div class="d-flex justify-content-center align-items-center py-3">
                     <div>{{message()}}</div>
                 </div>
             }
