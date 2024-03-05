@@ -7,10 +7,11 @@
                 <textarea name="message" placeholder="message"></textarea>
                 <input type="submit" value="Send" class="btn">
             </form>
+            @if(message()){
+                <div class="d-flex justify-content-center align-items-center my-3">
+                    <div>{{message()}}</div>
+                </div>
+            }
         </div>
     </div>
 </div>
-
-@if(message()){
-    <div>{{message()}}</div>
-}
