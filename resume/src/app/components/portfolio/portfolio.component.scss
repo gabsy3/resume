@@ -5,6 +5,9 @@
         }
         max-width: 768px;
         filter: saturate(0.3);
+        &:hover{
+            filter: saturate(1);
+        }
     }
 
     .text {
